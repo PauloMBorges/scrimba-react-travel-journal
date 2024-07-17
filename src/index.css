@@ -8,6 +8,9 @@
 
 body {
   font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  font-size: 16px;
 }
 
 header {
@@ -25,5 +28,77 @@ header {
 .header--title {
   color: white;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1em;
+}
+
+.cards-container {
+  padding: 3.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.card-image {
+  min-height: 268px;
+  width: auto;
+}
+
+.card-info {
+  padding: 1em;
+}
+
+.card-location {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.17em;
+  color: #2B283A;
+  margin-right: .5em;
+}
+
+.card-location-container {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+.card-hyperlink {
+  font-size: .85em;
+  color: #F55A5A;
+}
+
+.card-title {
+  font-size: 2.2em;
+  margin-top: .5rem;
+}
+
+.card-date {
+  font-size: .85em;
+  font-weight: 700;
+  color: #2B283A;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+
+}
+
+.card-description {
+  font-size: 1em;
+  color: #2B283A;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 13px;
+  }
+
+  .card-image {
+    min-height: 168px;
+    min-width: 150px;
+  }
 }

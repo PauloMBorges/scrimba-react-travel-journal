@@ -5,12 +5,12 @@ function Card(props) {
   return (
     <>
       <div className="card">
-        <img src={images[props.card.imageUrl]} alt={props.card.imageAlt} />
+        <img className="card-image" src={images[props.card.imageUrl]} alt={props.card.imageAlt} />
         <div className="card-info">
-          <div className="card-location">
+          <div className="card-location-container">
             <PositionIcon />
-            <span>{props.card.location}</span>
-            <a href={props.card.googleMapsUrl}>View on Google Maps</a>
+            <span className="card-location">{props.card.location}</span>
+            <a className="card-hyperlink" href={props.card.googleMapsUrl}>View on Google Maps</a>
           </div>
           <h1 className="card-title">{props.card.title}</h1>
           <div className="card-date">
