@@ -1,3 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background-color: #F55A5A;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  gap: .5em;
+}
+
+.header--title {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
 }

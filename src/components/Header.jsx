@@ -5,7 +5,7 @@ function Header() {
     <header>
       <div className="header-content">
         <GlobeIcon />
-        <h1>my travel journal.</h1>
+        <h1 className="header--title">my travel journal.</h1>
       </div>
     </header>
   );
