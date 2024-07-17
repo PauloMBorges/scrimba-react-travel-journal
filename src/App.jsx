@@ -1,9 +1,11 @@
+
+import Header from './components/Header.jsx'
 import Data from './data.js'
 
 function App() {
   return (
     <>
-      <h1>hi</h1>
+      <Header />
     </>
   )
 }
